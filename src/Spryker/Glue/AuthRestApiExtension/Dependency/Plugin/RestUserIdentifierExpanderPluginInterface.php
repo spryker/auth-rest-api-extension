@@ -23,7 +23,7 @@ interface RestUserIdentifierExpanderPluginInterface
      *
      * @return \Generated\Shared\Transfer\RestUserIdentifierTransfer
      */
-    public function validateAttributes(
+    public function expand(
         RestUserIdentifierTransfer $restUserIdentifierTransfer,
         RestRequestInterface $restRequest
     ): RestUserIdentifierTransfer;
